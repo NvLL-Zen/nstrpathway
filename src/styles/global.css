@@ -1,0 +1,16 @@
+* {
+    border: 0.5px solid red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    height: 100%;
+}
+
