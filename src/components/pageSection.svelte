@@ -12,4 +12,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    @media only screen and (max-width: 768px)  {
+        .pageSection {
+            height: fit-content;
+        }
+    }
 </style>
