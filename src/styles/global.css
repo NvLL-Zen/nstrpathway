@@ -1,5 +1,22 @@
 * {
-    border: 0.5px solid red;
+    /* border: 0.1px solid red; */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 600;
 }
 
 body {
@@ -7,7 +24,8 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-
+    width: 100%;
+    height: fit-content;
 }
 
 img {

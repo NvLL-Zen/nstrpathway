@@ -6,11 +6,13 @@
 
 <style>
     .pageSection {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        
     }
 
     @media only screen and (max-width: 768px)  {
