@@ -1,5 +1,5 @@
 <script>
-    import nstrLogo from '../../figmaAssets/Logos/nstrpathway.svg'
+    import nstrLogo from '../../figmaAssets/Logos/NSTR_White_Logo.svg'
     import kurmerLogo from '../../figmaAssets/Logos/kurmer.svg'
     import lanasionalLogo from '../../figmaAssets/Logos/LANasional.svg'
     import libraryBG from '../../backgrounds/library.png'
@@ -25,6 +25,10 @@
     * {
         margin: 0;
         padding: 0;
+    }
+
+    h1, p {
+        text-align: right;
     }
     #home {
         color: white;

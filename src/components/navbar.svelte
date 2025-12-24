@@ -1,5 +1,5 @@
 <script>
-    import NusantaraPLogo from '../figmaAssets/Logos/nstrpathway.svg'
+    import NusantaraPLogo from '../figmaAssets/Logos/NSTR_Outlined_Logo.svg'
 </script>
 
 <div id="navbarSpace">
@@ -26,7 +26,7 @@
     }
 
     #navbar {
-        background-color: rgb(87, 200, 245);
+        background-color: #F0F0F0;
         display: flex;
         position: fixed;
         flex-direction: row;
@@ -55,7 +55,7 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: black;
         display: flex;
         justify-content: center;
         align-items: center;

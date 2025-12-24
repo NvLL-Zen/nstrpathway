@@ -16,9 +16,12 @@
         height: 100%;
         justify-content: center;
 
+        pointer-events: none;
+
         font-size: 20px;
         opacity: 20%;
         color: red;
         text-align: center;
+        background: transparent;
     }
 </style>
