@@ -6,7 +6,7 @@
     
 </script>
 
-<div id="home">
+<div fetchpriority=high id="home">
     <div id="upperHalfDiv">
         <img id="nstrLogo" class="logo" src={nstrLogo} alt="Nusantara Pathway">
         <h1 id="upperHalfText">Nusantara Pathway</h1>

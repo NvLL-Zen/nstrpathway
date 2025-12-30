@@ -47,7 +47,7 @@
     #links {
         display: flex;
         flex-direction: row;
-        width: 15%;
+        gap: 20px;
         height: 100%;
         justify-content: space-between;
 
