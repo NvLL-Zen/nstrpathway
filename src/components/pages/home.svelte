@@ -38,7 +38,7 @@
         flex-direction: column;
         justify-content: space-between;
         
-        background: #30f830;
+        background: url('../../backgrounds/wallpaperplaceholder.png');
         background-size: cover;
     }
 

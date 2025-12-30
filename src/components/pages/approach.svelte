@@ -1,0 +1,82 @@
+<script>
+	import Nukumizu from '../../backgrounds/person_single.webp';
+	import Teacher from '../../backgrounds/personteaching.webp';
+</script>
+
+<div id="approach">
+	<div id="Teacher" class="approachEntry approachBG"></div>
+	<div class="approachEntry approachText">
+		<h3>Pendekatan Pendidikan</h3>
+		<h1>Nusantara</h1>
+		<h1>Pathway</h1>
+		<p>
+			Kami meyakini bahwa pendidikan yang efektif hanya dapat terwujud ketika kurikulum,
+			pembelajaran, dan asesmen berjalan selaras. Nusantara Pathway dikembangkan dengan pendekatan
+			bertahap yang menyeimbangkan pemahaman konsep, penerapan nyata, dan pengukuran kemajuan
+			belajar yang adil, sehingga peserta didik tidak hanya unggul secara akademik, tetapi juga siap
+			menghadapi pendidikan tinggi dan tantangan global.
+		</p>
+	</div>
+	<div class="approachEntry approachText">
+		<h2>“Pendidikan seharusnya
+membangun cara berpikir,
+bukan sekadar mengejar
+nilai.”</h2>
+		<p>
+			Nusantara Pathway menempatkan
+pemahaman, konsistensi, dan
+perkembangan peserta didik sebagai inti
+dari proses belajar.
+		</p>
+	</div>
+	<div id="Nukumizu" class="approachEntry"></div>
+</div>
+
+<style>
+	/* * {
+		border: 1px solid red;
+	} */
+
+	p {
+		width: 50%;
+	}
+
+    h2 {
+        width: 60%;
+    }
+	#approach {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+		height: 200vh;
+		padding-top: 58px;
+	}
+
+	#Nukumizu {
+		background: url('../../backgrounds/person_single.webp');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+    #Teacher {
+        background: url('../../backgrounds/personteaching.webp');
+		background-size: cover;
+		background-position:top;
+		background-repeat: no-repeat;
+    }
+
+	.approachEntry {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.approachText {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 5%;
+
+        gap: 15px;
+	}
+</style>

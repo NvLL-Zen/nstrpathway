@@ -9,9 +9,9 @@
     <img class="navbarItems" id="NusantaraLogo" src={NusantaraPLogo} alt="nusantar pathway">
     <div class="navbarItems" id="links">
         <a href="./">Home</a>
-        <a href="./">About</a>
-        <a href="./">Link 2</a>
-        <a href="./">Link 3</a>
+        <a href="./#about">About</a>
+        <a href="./#roadmapBody">Roadmap</a>
+        <a href="./#approach">Approach</a>
     </div>
 </div>
 
@@ -59,6 +59,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        scale: 1.1;
     }
 
 </style>
