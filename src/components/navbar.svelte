@@ -1,66 +1,156 @@
 <script>
-    import NusantaraPLogo from '../figmaAssets/Logos/NSTR_Outlined_Logo.svg'
+	import NusantaraPLogo from '../figmaAssets/Logos/NSTR_Outlined_Logo.svg';
+	import Hamburger from '../figmaAssets/Other/Hamburger.svg';
+
+    let navbarMobile;
+    let navbarStatus = "closed"
+    
+    let hamburgir;
+
+	const navbarTrigger = () => {
+        if (navbarStatus == "closed") {
+            navbarMobile.style.opacity = "100%"
+            navbarStatus = "open"
+            
+            hamburgir.style.transform = "rotate(180deg)"
+        }
+		else {
+            navbarMobile.style.opacity = "0%"
+            navbarStatus = "closed"
+
+            hamburgir.style.transform = "rotate(0deg)"
+        }
+	};
 </script>
 
-<div id="navbarSpace">
-
-</div>
+<div id="navbarSpace"></div>
 <div id="navbar">
-    <img class="navbarItems" id="NusantaraLogo" src={NusantaraPLogo} alt="nusantar pathway">
-    <div class="navbarItems" id="links">
-        <a href="./">Home</a>
-        <a href="./#about">About</a>
-        <a href="./#roadmapBody">Roadmap</a>
-        <a href="./#approach">Approach</a>
-    </div>
+	<img class="navbarItems" id="NusantaraLogo" src={NusantaraPLogo} alt="nusantar pathway" />
+	<div class="navbarItems" id="links">
+		<a href="./">Home</a>
+		<a href="./#about">About</a>
+		<a href="./#roadmap">Roadmap</a>
+		<a href="./#approach">Approach</a>
+	</div>
 </div>
+<div id="navbarMobile">
+	
+		<img class="navbarItems" id="NusantaraLogo" src={NusantaraPLogo} alt="nusantar pathway" />
+		<button on:click={navbarTrigger}>
+			<img bind:this={hamburgir} id="hamburger" src={Hamburger} alt="hamburgir :)" />
+		</button>
+</div>
+<div bind:this={navbarMobile} class="navbarItems" id="links">
+		<a on:click={navbarTrigger} href="./">Home</a>
+		<a on:click={navbarTrigger} href="./#about">About</a>
+		<a on:click={navbarTrigger} href="./#roadmap">Roadmap</a>
+		<a on:click={navbarTrigger} href="./#approach">Approach</a>
+	</div>
 
 <style>
-    * { 
-        padding: 0;
-        margin: 0;
-    }
+	* {
+		padding: 0;
+		margin: 0;
+	}
 
-    #navbarSpace {
-        height: 58px;
-    }
+	#navbarSpace {
+		height: 58px;
+	}
 
-    #navbar {
-        background-color: #F0F0F0;
-        display: flex;
-        position: fixed;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 58px;
-        padding: 10px 2.5% 10px 2.5%;
-        margin: 0;
+	#navbar {
+		background-color: #f0f0f0;
+		display: flex;
+		position: fixed;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 58px;
+		padding: 10px 2.5% 10px 2.5%;
+		margin: 0;
 
-        box-sizing: border-box;
-    }
+		box-sizing: border-box;
+	}
 
-    .navbarItems {
-        height: 100%;
-    }
+	#navbarMobile {
+		display: none;
+	}
 
-    #links {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        height: 100%;
-        justify-content: space-between;
+	.navbarItems {
+		height: 100%;
+	}
 
-    }
+	#links {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		height: 100%;
+		justify-content: space-between;
+	}
 
-    a {
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+	a {
+		text-decoration: none;
+		color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-        scale: 1.1;
-    }
+		scale: 1.1;
+	}
 
+	@media only screen and (max-width: 720px) {
+        * {
+            transition: all 0.25s ease-out;
+        }
+
+        button {
+            border: none;
+        }
+		#navbarMobile {
+            position: fixed;
+			background-color: #f0f0f0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 58px;
+			padding: 10px 2.5% 10px 2.5%;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+        #hamburger {
+			height: 100%;
+		}
+
+		#navbar {
+			display: none;
+		}
+
+        #links {
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            height: calc(100vh - 58px);
+            background-color: #d1d0d0;
+
+            position: fixed;
+            opacity: 0%;
+            width: 100%;
+            margin-top: 58px;
+        }
+
+        a {
+            scale: 2;
+        }
+
+		button {
+			height: 100%;
+		}
+
+		img {
+			width: fit-content;
+		}
+	}
 </style>

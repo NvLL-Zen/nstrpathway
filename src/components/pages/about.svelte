@@ -11,12 +11,11 @@
 				<h1>Pathway</h1>
 			</div>
 		</div>
-        <div class="halfVertical">
-            <img id="aboutInfo" src={AboutInfo} alt="AboutInfo" />
-        </div>
-		
+		<div class="halfVertical">
+			<img id="aboutInfo" src={AboutInfo} alt="AboutInfo" />
+		</div>
 	</div>
-	<div id="aboutDescriptionContainer">
+	<div id="aboutDescriptionContainer" class="halfHorizontal">
 		<div id="aboutDescription" class="halfHorizontal">
 			<p id="aboutLeadParagraph">
 				Nusantara Pathway merupakan program pendidikan menengah yang dirancang untuk memberikan
@@ -39,18 +38,6 @@
 </div>
 
 <style>
-	h2 {
-		font-weight: 700;
-		font-size: 2vw;
-	}
-	h1 {
-		font-weight: 500;
-		font-size: 3vw;
-	}
-	p {
-		font-size: 1.25vw;
-		font-weight: 500;
-	}
 	#about {
 		width: 100%;
 		height: 100%;
@@ -68,10 +55,10 @@
 		height: 100%;
 	}
 
-    .halfVertical {
-        width: 100%;
-        height: 50%;
-    }
+	.halfVertical {
+		width: 100%;
+		height: 50%;
+	}
 
 	#aboutMain,
 	#aboutDescriptionContainer {
@@ -103,5 +90,54 @@
 
 	#aboutLeadParagraph {
 		font-weight: 700;
+	}
+
+	@media only screen and (max-width: 720px) {
+		.halfHorizontal {
+			width: 100%;
+			height: 100%;
+		}
+
+		.halfVertical {
+			height: 50%;
+		}
+		
+		#about {
+			flex-direction: column;
+			height: calc(120vh + 58px);
+
+			padding-left: 1.5%;
+			padding-top: 58px;
+		}
+
+		#aboutMain {
+			display: flex;
+			flex-direction: column;
+			height: 35%;
+		}
+
+		#nstrTitle {
+			display: flex;
+			flex-direction: row;
+			gap: 3%;
+		}
+
+		#aboutDescriptionContainer {
+			width: 100%;
+			height: 65%;
+		}
+
+		#aboutDescription {
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#aboutInfo {
+			height: 100%;
+		}
 	}
 </style>

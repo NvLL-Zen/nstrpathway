@@ -40,6 +40,7 @@
         
         background: url('../../backgrounds/wallpaperplaceholder.png');
         background-size: cover;
+        background-position: center;
     }
 
     #upperHalfDiv {
@@ -73,7 +74,7 @@
 
     .lowerHalfDivLogo {
         display: flex;
-        width: 50%;
+        width: 20%;
         margin-bottom: 1%;
     }
 
@@ -82,7 +83,20 @@
     }
 
     #kurmerLogo {
-        width: 15%;
+        width: 50%;
+    }
+
+    #lanasionalLogo {
+        width: 50%;
+    }
+
+    @media only screen and (max-width: 720px) {
+        #nstrLogo {
+        width: 40%;
+        }
+        .lowerHalfDivLogo {
+            width: 60%;
+        }
     }
 
 

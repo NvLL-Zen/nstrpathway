@@ -17,19 +17,21 @@
 			menghadapi pendidikan tinggi dan tantangan global.
 		</p>
 	</div>
-	<div class="approachEntry approachText">
-		<h2>“Pendidikan seharusnya
-membangun cara berpikir,
-bukan sekadar mengejar
-nilai.”</h2>
+	<div id="lowerApproachText" class="approachEntry approachText">
+		<h2>“Pendidikan seharusnya membangun cara berpikir, bukan sekadar mengejar nilai.”</h2>
 		<p>
-			Nusantara Pathway menempatkan
-pemahaman, konsistensi, dan
-perkembangan peserta didik sebagai inti
-dari proses belajar.
+			Nusantara Pathway menempatkan pemahaman, konsistensi, dan perkembangan peserta didik sebagai
+			inti dari proses belajar.
 		</p>
 	</div>
 	<div id="Nukumizu" class="approachEntry"></div>
+	<div id="lowerApproachTextMobile" class="approachEntry approachText">
+		<h2>“Pendidikan seharusnya membangun cara berpikir, bukan sekadar mengejar nilai.”</h2>
+		<p>
+			Nusantara Pathway menempatkan pemahaman, konsistensi, dan perkembangan peserta didik sebagai
+			inti dari proses belajar.
+		</p>
+	</div>
 </div>
 
 <style>
@@ -41,9 +43,9 @@ dari proses belajar.
 		width: 50%;
 	}
 
-    h2 {
-        width: 60%;
-    }
+	h2 {
+		width: 60%;
+	}
 	#approach {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -59,12 +61,16 @@ dari proses belajar.
 		background-repeat: no-repeat;
 	}
 
-    #Teacher {
-        background: url('../../backgrounds/personteaching.webp');
+	#lowerApproachTextMobile {
+		display: none;
+	}
+
+	#Teacher {
+		background: url('../../backgrounds/personteaching.webp');
 		background-size: cover;
-		background-position:top;
+		background-position: top;
 		background-repeat: no-repeat;
-    }
+	}
 
 	.approachEntry {
 		width: 100%;
@@ -77,6 +83,41 @@ dari proses belajar.
 		justify-content: center;
 		padding-left: 5%;
 
-        gap: 15px;
+		gap: 15px;
+	}
+
+	@media only screen and (max-width: 720px) {
+		#approach {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#lowerApproachText {
+			display: none;
+		}
+
+		#lowerApproachTextMobile {
+			display: flex;
+			justify-content: flex-start;
+			padding-top: 5%;
+		}
+
+		p {
+			width: 100%;
+		}
+
+		h2 {
+			width: 100%;
+		}
+
+		.approachEntry {
+		width: 100%;
+		height: 70vh;
+		}
+
+		.approachText {
+			width: 95%;
+			height: 75%;
+		}
 	}
 </style>
