@@ -50,8 +50,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		width: 100%;
-		height: 200vh;
-		padding-top: 58px;
+		height: auto;
+		margin-top: calc(15vh + 58px);
 	}
 
 	#Nukumizu {
@@ -81,12 +81,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 5%;
+		padding: 5% 0% 5% 5%;
 
 		gap: 15px;
 	}
 
-	@media only screen and (max-width: 720px) {
+	@media only screen and (max-width: 1020px) {
 		#approach {
 			display: flex;
 			flex-direction: column;

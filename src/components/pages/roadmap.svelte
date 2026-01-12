@@ -182,13 +182,13 @@ Berorientasi pada:</strong></p>
 
 	#roadmap {
 		width: 95%;
-		height: 100%;
+		height: auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 
-		padding-top: 58px;
+		margin-top: 58px;
 	}
 
 	#logo {
@@ -224,6 +224,7 @@ Berorientasi pada:</strong></p>
 		padding: 20px 10px;
 		/* Ensures text aligns to the top of the description row */
 		align-self: start;
+		height: auto;
 	}
 
     #Eksplorasi {

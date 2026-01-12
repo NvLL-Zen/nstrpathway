@@ -12,6 +12,8 @@
     import Roadmap from '../components/pages/roadmap.svelte';
     import Approach from '../components/pages/approach.svelte';
 
+    import Footer from '../components/pages/footer.svelte';
+
 </script>
 
 <Greenscreen />
@@ -26,3 +28,5 @@
 <PageSectionFlex>
     <Approach />
 </PageSectionFlex>
+<Footer />
+
