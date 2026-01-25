@@ -19,9 +19,9 @@
 <Greenscreen />
 <Navbar></Navbar>
     <Home />
-<PageSection>
+<PageSectionFlex>
     <About />
-</PageSection>
+</PageSectionFlex>
 <PageSection>
     <Roadmap />
 </PageSection>

@@ -38,7 +38,7 @@
         flex-direction: column;
         justify-content: space-between;
         
-        background: url('../../backgrounds/wallpaperplaceholder.png');
+        background: url('../../backgrounds/homebg_alt.webp');
         background-size: cover;
         background-position: center;
     }

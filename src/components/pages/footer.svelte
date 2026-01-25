@@ -1,6 +1,8 @@
 <script>
 	import Logo from '../../figmaAssets/Logos/NSTR_White_Logo.svg';
+	import WaLogo from '../../figmaAssets/Logos/watrs.png';
 	import EmailLogo from '../../figmaAssets/Logos/email.png';
+	import WALink from '../../figmaAssets/Logos/WA.svg';
 </script>
 
 <div id="footer">
@@ -16,18 +18,17 @@
 		<div class="footerEntry">
 			<div class="footerInput">
 				<h2 id="footerInputDesc">Tertarik dengan Nusantara Pathway?</h2>
-				<div class="input">
-					<input type="text" placeholder="someone@example.com" />
-                    <a href="mailto:someone@example.com">
-                        <button id="send">
-						<img id="sendButton" src={EmailLogo} alt="Email Logo" />
-					</button>
-                    </a>
-					
-				</div>
+				<a target="_blank" href="https://wa.me/62859106710339" class="whatsapp">
+					<img src={WALink} id="linkWA" alt="Link WA" />
+				</a>
 			</div>
 		</div>
-		<div class="footerEntry">footer 3</div>
+		<div class="footerEntry">
+			<h2>Follow us</h2>
+			<a id="linkIG" target="_blank" href="https://www.instagram.com/nusantara_pathway/">
+				<h3>@nusantara_pathway</h3></a
+			>
+		</div>
 	</div>
 </div>
 
@@ -61,8 +62,8 @@
 
 	.footerEntry {
 		width: 100%;
-        height: 100%;
-        box-sizing: border-box;
+		height: 100%;
+		box-sizing: border-box;
 		/* border: 1px solid red; */
 	}
 
@@ -70,50 +71,31 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-        justify-content: space-evenly;
 	}
 
-	.input {
-		height: 25%;
-        width: 90%;
-		display: flex;
-		flex-direction: row;
-		background-color: white;
-		border-radius: 50px;
+	.whatsapp {
+		padding-top: 10px;
 	}
 
-    #footerInputDesc {
-        transform: translateY(20%);
-    }
-
-	input {
-		background-color: transparent;
-		width: 85%;
+	#linkWA {
+		width: min-content;
 		height: 100%;
-		text-align: center;
-		font-size: 200%;
-		border: none;
-
-		font-family: 'Inter', sans-serif;
-		font-optical-sizing: auto;
-		font-style: normal;
 	}
 
-	input:focus {
-		border: none;
-		outline: none;
-	}
-
-	#send {
-		border: none;
-		border-radius: 50px;
-		height: 100%;
-		scale: 1.1;
-	}
-
-	#sendButton {
-		width: 100%;
-		height: 100%;
+	#linkIG {
+		background-image: linear-gradient(
+			90deg,
+			rgba(255, 176, 41, 1) 0%,
+			rgba(254, 11, 93, 1) 50%,
+			rgba(217, 36, 191, 1) 100%
+		);
+		background-clip: text;
+		-webkit-background-clip: text; /* Vendor prefix for compatibility */
+		/* Make the text transparent so the background shows through */
+		-webkit-text-fill-color: transparent; /* Vendor prefix for compatibility */
+		color: transparent; /* Standard property */
+		width: fit-content;
+		height: fit-content;
 	}
 
 	img {
@@ -122,5 +104,13 @@
 
 	p {
 		font-weight: 100;
+	}
+
+	a {
+		color: #00bb38;
+		text-decoration: none;
+		display: flex;
+		height: 40%;
+		align-items: center;
 	}
 </style>

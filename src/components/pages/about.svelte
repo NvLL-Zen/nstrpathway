@@ -38,7 +38,7 @@
 <style>
 	#about {
 		width: 100%;
-		height: auto;
+		height: 65vh;
 
 		display: flex;
 		flex-direction: row;
@@ -56,7 +56,12 @@
 
 	#aboutMain,
 	#aboutDescriptionContainer {
-		padding: 5% 0 5% 2%;
+		padding: 50px 0 50px 50px;
+	}
+
+	#aboutMain {
+		display: flex;
+		height: 85%;
 	}
 
 	#nstrTitle {
@@ -66,16 +71,16 @@
 	#aboutDescriptionContainer {
 		padding-right: 50px;
 		width: 50%;
-		height: 100%;
+		height: 85%;
 		display: flex;
 		flex-direction: column;
 
-		justify-content: flex-end;
+		justify-content: flex-start;
 	}
 
 	#aboutDescription {
 		width: 100%;
-		height: 75%;
+		height: 100%;
 
 		display: flex;
 		flex-direction: column;

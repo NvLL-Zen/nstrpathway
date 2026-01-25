@@ -66,9 +66,9 @@
 	}
 
 	#Teacher {
-		background: url('../../backgrounds/personteaching.webp');
+		background: url('../../backgrounds/aproach-1.webp');
 		background-size: cover;
-		background-position: top;
+		background-position:bottom;
 		background-repeat: no-repeat;
 	}
 
