@@ -1,8 +1,3 @@
-<script>
-	import Nukumizu from '../../backgrounds/person_single.webp';
-	import Teacher from '../../backgrounds/personteaching.webp';
-</script>
-
 <div id="approach">
 	<div id="Teacher" class="approachEntry approachBG"></div>
 	<div class="approachEntry approachText">
@@ -24,7 +19,7 @@
 			inti dari proses belajar.
 		</p>
 	</div>
-	<div id="Nukumizu" class="approachEntry"></div>
+	<div id="secondImage" class="approachEntry approachBG"></div>
 	<div id="lowerApproachTextMobile" class="approachEntry approachText">
 		<h2>“Pendidikan seharusnya membangun cara berpikir, bukan sekadar mengejar nilai.”</h2>
 		<p>
@@ -54,8 +49,8 @@
 		margin-top: calc(15vh + 58px);
 	}
 
-	#Nukumizu {
-		background: url('../../backgrounds/person_single.webp');
+	#secondImage {
+		background: url('../../backgrounds/rubikcube-student.png');
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -87,6 +82,7 @@
 	}
 
 	@media only screen and (max-width: 1020px) {
+		
 		#approach {
 			display: flex;
 			flex-direction: column;
@@ -118,6 +114,10 @@
 		.approachText {
 			width: 95%;
 			height: 75%;
+		}
+
+		.approachBG {
+			height: 50vh;
 		}
 	}
 </style>

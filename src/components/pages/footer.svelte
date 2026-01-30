@@ -30,7 +30,9 @@
 			>
 		</div>
 	</div>
+	
 </div>
+<p>ⓒ Nusantara Pathway - 2026</p>
 
 <style>
 	#footer {
@@ -40,7 +42,8 @@
 		padding: 20px 10px;
 
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	#footerContainer {
@@ -58,6 +61,7 @@
 
 	#footerDescText {
 		width: 90%;
+		text-align: left;
 	}
 
 	.footerEntry {
@@ -79,6 +83,7 @@
 
 	#linkWA {
 		width: min-content;
+		max-width: 100%;
 		height: 100%;
 	}
 
@@ -96,6 +101,7 @@
 		color: transparent; /* Standard property */
 		width: fit-content;
 		height: fit-content;
+		
 	}
 
 	img {
@@ -104,6 +110,12 @@
 
 	p {
 		font-weight: 100;
+		width: 100%;
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-weight: 100;
+		padding-top: 25px;
 	}
 
 	a {
@@ -112,5 +124,31 @@
 		display: flex;
 		height: 40%;
 		align-items: center;
+	}
+	@media only screen and (max-width: 720px) {
+		#linkIG {
+			scale: 1.25;
+		}
+		#footerContainer {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		#footerDescText {
+			text-align: center;
+		}
+
+		.footerEntry {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		a {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
 	}
 </style>

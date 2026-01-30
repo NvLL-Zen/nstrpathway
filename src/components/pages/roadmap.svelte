@@ -182,7 +182,7 @@ Berorientasi pada:</strong></p>
 
 	#roadmap {
 		width: 95%;
-		height: auto;
+		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;

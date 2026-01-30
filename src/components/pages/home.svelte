@@ -3,7 +3,7 @@
     import kurmerLogo from '../../figmaAssets/Logos/kurmer.svg'
     import lanasionalLogo from '../../figmaAssets/Logos/LANasional.svg'
     import libraryBG from '../../backgrounds/library.png'
-    
+    import whiteKurmerLogo from '../../figmaAssets/Logos/Kurmer_Light.svg'
 </script>
 
 <div fetchpriority=high id="home">
@@ -14,10 +14,10 @@
     </div>
     <div id="lowerHalfDiv">
         <div class="lowerHalfDivLogo">
-            <img id="kurmerLogo" class="logo" src={kurmerLogo} alt="Kurikulum Merdeka">
+            <img id="kurmerLogo" class="logo" src={whiteKurmerLogo} alt="Kurikulum Merdeka">
             <img id="lanasionalLogo" class="logo" src={lanasionalLogo} alt="LANasional">
         </div>
-        <p>ⓒ Nusantara Pathway - 2026</p>
+        
     </div>
 </div>
 
