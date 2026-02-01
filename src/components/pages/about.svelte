@@ -38,7 +38,7 @@
 <style>
 	#about {
 		width: 100%;
-		height: 65vh;
+		height: 50vh;
 
 		display: flex;
 		flex-direction: row;
@@ -56,7 +56,7 @@
 
 	#aboutMain,
 	#aboutDescriptionContainer {
-		padding: 50px 0 50px 50px;
+		padding: 50px 0 0px 50px;
 	}
 
 	#aboutMain {
@@ -71,7 +71,7 @@
 	#aboutDescriptionContainer {
 		padding-right: 50px;
 		width: 50%;
-		height: 85%;
+		height: 90%;
 		display: flex;
 		flex-direction: column;
 
