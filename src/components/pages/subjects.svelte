@@ -6,7 +6,7 @@
         <h3>Islamiyah</h3>
         <h3>Fisika</h3>
         <h3>Geografi</h3>
-        <h3>Isim?</h3>
+        <h3>Kimia</h3>
         <h3>Biologi</h3>
         <h3>Sosiologi</h3>
         <h3>Psikologi</h3>
